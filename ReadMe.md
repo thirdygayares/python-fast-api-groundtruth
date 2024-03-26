@@ -1,0 +1,5 @@
+### pip install fastapi uvicorn python-multipart
+
+### uvicorn main:app --reload
+
+
