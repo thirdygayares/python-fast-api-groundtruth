@@ -5,7 +5,10 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "python-fast-api-groundtruth"
 version = "0.1.0"
-dynamic = ["dependencies"]
+description = "Groundtruth FastAPI service"
+requires-python = ">=3.10"
+dependencies = [
+]
 
-[tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
+[tool.setuptools.packages.find]
+include = ["schema_groundtruth*", "pdf_folder*"]
