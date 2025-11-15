@@ -20,7 +20,7 @@ async def say_hello(name: str):
 @app.get("/get-pdf/")
 async def get_pdf(filename: str):
     # Define the path to your folder
-    folder_path = 'pdf_folder'
+    folder_path = ''
     file_path = os.path.join(folder_path, filename)
 
     # Check if file exists
@@ -39,7 +39,7 @@ async def get_pdf(pdf_request: PDFRequest):
     filename = pdf_request.pdfName
 
     # Define the path to your folder
-    folder_path = 'pdf_folder'
+    folder_path = ''
     file_path = os.path.join(folder_path, filename)
 
     # Check if file exists
