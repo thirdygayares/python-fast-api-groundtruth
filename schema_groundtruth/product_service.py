@@ -1,6 +1,6 @@
 from typing import List, Optional
 
-from product_schema import Product, ProductCreate, ProductUpdate
+from schema_groundtruth.product_schema import Product, ProductCreate, ProductUpdate
 
 PRODUCTS: List[Product] = []
 _next_id = 1

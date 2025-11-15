@@ -1,8 +1,8 @@
 from typing import List
 from fastapi import APIRouter, HTTPException
 
-from product_schema import Product, ProductCreate, ProductUpdate
-from product_service import list_products, create_product, get_product, update_product, \
+from schema_groundtruth.product_schema import Product, ProductCreate, ProductUpdate
+from schema_groundtruth.product_service import list_products, create_product, get_product, update_product, \
     delete_product
 
 router = APIRouter(
